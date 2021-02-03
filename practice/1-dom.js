@@ -10,5 +10,17 @@ window.addEventListener('DOMContentLoaded', function () {
 
   // ⬇️ ⬇️ ⬇️ YOUR CODE GOES HERE ⬇️ ⬇️ ⬇️
 
+  // first set variables for dice
+  let die1 = getRandomInt(6)
+  let die2 = getRandomInt(6)
+
+  // find the dice element
+
+  let diceElement = document.querySelector('.dice')
+  diceElement.innerHTML = `
+    <img src="../images/dice/${die1}.png" class="die w-1/2 md:w-1/6">
+    <img src="../images/dice/${die2}.png" class="die w-1/2 md:w-1/6">
+  `
+
   // ⬆️ ⬆️ ⬆️ YOUR CODE ENDS HERE. DON'T CHANGE ANY OTHER CODE ⬆️ ⬆️ ⬆️
 })
